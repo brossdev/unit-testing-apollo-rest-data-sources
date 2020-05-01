@@ -12,10 +12,11 @@
     "graphql": "^15.0.0"
   },
   "scripts": {
-    "start:dev": "node src/index.js",
+    "start:dev": "concurrently \"yarn start:dog-server\" \"node src/index.js\" ",
     "start:dog-server": "json-server --watch  -p 4001 dogs-server.json"
   },
   "devDependencies": {
+    "concurrently": "^5.2.0",
     "json-server": "^0.16.1"
   }
 }
