@@ -1,0 +1,14 @@
+{
+  "name": "unit-testing-apollo-rest-data-sources-starter",
+  "version": "1.0.0",
+  "description": "starter repo for unit testing apollo rest data sources",
+  "main": "index.js",
+  "repository": "https://github.com/Brossco85/unit-testing-apollo-rest-data-sources",
+  "author": "bobby.dev@pm.me",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-datasource-rest": "^0.8.1",
+    "apollo-server": "^2.12.0",
+    "graphql": "^15.0.0"
+  }
+}
