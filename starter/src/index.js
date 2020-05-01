@@ -1,4 +1,5 @@
 const { ApolloServer, gql } = require("apollo-server");
+const DogsAPI = require("./data-sources/dogs-api");
 
 const typeDefs = gql`
   type Dog {
@@ -11,32 +12,19 @@ const typeDefs = gql`
   }
 `;
 
-const dogs = [
-  {
-    name: "Riley",
-    breed: "Cocker Spaniel",
-  },
-  {
-    name: "Opie",
-    breed: "Cocker Spaniel",
-  },
-  {
-    name: "Ivy",
-    breed: "Jug",
-  },
-  {
-    name: "Lola",
-    breed: "Jug",
-  },
-];
-
 const resolvers = {
   Query: {
-    dogs: () => dogs,
+    dogs: async (_source, _args, { dataSources }) => {
+      return await dataSources.dogsAPI.getAllDogs();
+    },
   },
 };
 
-const server = new ApolloServer({ typeDefs, resolvers });
+const dataSources = () => ({
+  dogsAPI: new DogsAPI(),
+});
+
+const server = new ApolloServer({ typeDefs, resolvers, dataSources });
 
 server.listen().then(({ url }) => {
   console.log(`🚀  Server ready at ${url}`);
