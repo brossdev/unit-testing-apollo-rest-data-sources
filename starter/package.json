@@ -2,7 +2,7 @@
   "name": "unit-testing-apollo-rest-data-sources-starter",
   "version": "1.0.0",
   "description": "starter repo for unit testing apollo rest data sources",
-  "main": "index.js",
+  "main": "src/index.js",
   "repository": "https://github.com/Brossco85/unit-testing-apollo-rest-data-sources",
   "author": "bobby.dev@pm.me",
   "license": "MIT",
@@ -12,6 +12,6 @@
     "graphql": "^15.0.0"
   },
   "scripts": {
-    "start:dev": "node index.js"
+    "start:dev": "node src/index.js"
   }
 }
