@@ -1,0 +1,24 @@
+{
+  "dogs": [
+    {
+      "id": 1,
+      "name": "Riley",
+      "breed": "Cocker Spaniel"
+    },
+    {
+      "id": 2,
+      "name": "Opie",
+      "breed": "Cocker Spaniel"
+    },
+    {
+      "id": 3,
+      "name": "Ivy",
+      "breed": "Jug"
+    },
+    {
+      "id": 4,
+      "name": "Lola",
+      "breed": "Jug"
+    }
+  ]
+}
