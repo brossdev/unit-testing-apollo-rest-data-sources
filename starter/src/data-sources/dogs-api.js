@@ -3,7 +3,7 @@ const { RESTDataSource } = require("apollo-datasource-rest");
 class DogsAPI extends RESTDataSource {
   constructor() {
     super();
-    this.baseURL = "https://localhost:4001";
+    this.baseURL = "https://localhost:4001/";
   }
 
   async getAllDogs(id) {
