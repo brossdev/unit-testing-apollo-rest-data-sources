@@ -35,7 +35,11 @@ const dataSources = () => ({
   catsAPI: new CatsAPI(),
 });
 
-const server = new ApolloServer({ typeDefs, resolvers, dataSources });
+const server = new ApolloServer({
+  typeDefs,
+  resolvers,
+  dataSources,
+});
 
 server.listen().then(({ url }) => {
   console.log(`🚀  Server ready at ${url}`);
