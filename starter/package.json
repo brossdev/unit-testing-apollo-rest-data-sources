@@ -12,8 +12,9 @@
     "graphql": "^15.0.0"
   },
   "scripts": {
-    "start:dev": "concurrently \"yarn start:dog-server\" \"node src/index.js\" ",
-    "start:dog-server": "json-server --watch  -p 4001 dogs-server.json"
+    "start:dev": "concurrently \"yarn start:dog-server\" \"yarn start:cat-server\" \"node src/index.js\" ",
+    "start:dog-server": "json-server --watch  -p 4001 dogs-server.json",
+    "start:cat-server": "json-server --watch  -p 4002 cats-server.json"
   },
   "devDependencies": {
     "concurrently": "^5.2.0",
