@@ -1,0 +1,24 @@
+{
+  "cats": [
+    {
+      "id": 1,
+      "name": "Missy",
+      "breed": "Ragdoll"
+    },
+    {
+      "id": 2,
+      "name": "Manpuss",
+      "breed": "Ragdoll"
+    },
+    {
+      "id": 3,
+      "name": "Stevie",
+      "breed": "Spyhnx"
+    },
+    {
+      "id": 4,
+      "name": "Exotic Joe",
+      "breed": "Tiger"
+    }
+  ]
+}
